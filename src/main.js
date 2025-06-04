@@ -1,0 +1,10 @@
+import './assets/tailwind.css';
+import { createApp } from 'vue'
+import './style.css'
+import App from './App.vue'
+import router from './router'
+
+createApp(App)
+  .use(router)  // ติดตั้ง router
+  .mount('#app');
+  
