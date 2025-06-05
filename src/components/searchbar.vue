@@ -202,7 +202,7 @@ onMounted(loadFilters);
             <p class="font-semibold mb-2 text-[#005a9a] mt-4">หมวดหมู่</p>
             <div class="flex flex-wrap gap-2">
               <button 
-                v-for="category in ['ทั้งหมด', 'อาหารสัตว์', 'อาบน้ำ ดูแลขน', 'กรง ที่นอน', 'ของเล่น', 'ทรายแมว']"
+                v-for="category in ['ทั้งหมด', 'อาหารสัตว์', 'อาบน้ำ ดูแลขน', 'กรง ที่นอน', 'ของเล่นสัตว์', 'ทรายแมว']"
                 :key="category"
                 class="btn btn-sm text-[#83a9c4] bg-white border border-[#83a9c4]"
                 :class="{'bg-[#2b7deb!important] text-[#ffffff] border border-[#2b7deb]': selectedCategory === category}"
