@@ -1,13 +1,9 @@
 import axios from 'axios';
 
-const apiUrl = import.meta.env.VITE_API_URL || 'https://petshop-api-6gix.onrender.com';
 
 // สร้าง axios instance
 const apiClient = axios.create({
-  baseURL: apiUrl,
-  headers: {
-    'Content-Type': 'application/json',
-  },
+  baseURL: 'https://petshop-api-6gix.onrender.com',
   timeout: 10000
 });
 
