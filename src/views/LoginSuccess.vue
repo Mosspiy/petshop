@@ -20,7 +20,7 @@ onMounted(async () => {
       loading.value = false;
       return;
     }
-    
+    localStorage.setItem('auth_token', token);
     // ส่ง token ไปให้ authService ประมวลผล
     const result = await authService.handleLineLoginCallback(token);
     
